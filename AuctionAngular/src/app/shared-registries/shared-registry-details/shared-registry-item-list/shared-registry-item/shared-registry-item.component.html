@@ -1,0 +1,17 @@
+<a style="cursor: pointer" class="list-group-item clearfix" routerLinkActive="active">
+  <td class="col-md-3"><img class="img-responsive" src="{{item.imageUrl}}"></td>
+  <td class="col-md-2">{{item.partNo}}</td>
+  <td class="col-md-2">{{item.name}}</td>
+  <td class="col-md-2">{{item.description}}</td>
+  <td class="col-md-2">{{item.cond}}</td>
+  <td class="col-md-1 col-xs-1" style="font-weight: bold;">{{item.quantity}}</td>
+  <td class="col-md-2">{{item.giftUser}}</td>
+  <td>
+    <button type="button" class="btn btn-primary" (click)="selfAssign(item)" value="Assign to me">
+      <span>Assign To Me</span>
+    </button>
+  </td>
+  <!--<span class="pull-right">-->
+  <!--<img [src]="recipe.imagePath" alt="" class="img-responsive" style="max-height: 100px;">-->
+  <!--</span>-->
+</a>
